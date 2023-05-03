@@ -1,5 +1,6 @@
 import '../css/calculator.css';
 import React from 'react';
+import Button from './Buttons';
 
 function Calculator() {
   return (
@@ -7,73 +8,43 @@ function Calculator() {
       <div className="main-container">
         <div className="screen">0</div>
 
-        <input className="all-btn" id="AC-btn" type="button" value="AC" />
+        <Button className="all-btn" id="AC-btn" value="AC" />
 
-        <input
-          className="all-btn"
-          id="plus-or-minus-btn"
-          type="button"
-          value="+/-"
-        />
+        <Button className="all-btn" id="plus-or-minus-btn" value="+/-" />
 
-        <input className="all-btn" id="percent-btn" type="button" value="%" />
+        <Button className="all-btn" id="percent-btn" value="%" />
 
-        <input
-          className="orange-btn all-btn"
-          id="division-btn"
-          type="button"
-          value="÷"
-        />
+        <Button className="orange-btn all-btn" id="division-btn" value="÷" />
 
-        <input className="all-btn" id="seven-btn" type="button" value="7" />
+        <Button className="all-btn" id="seven-btn" value="7" />
 
-        <input className="all-btn" id="eight-btn" type="button" value="8" />
+        <Button className="all-btn" id="eight-btn" value="8" />
 
-        <input className="all-btn" id="nine-btn" type="button" value="9" />
+        <Button className="all-btn" id="nine-btn" value="9" />
 
-        <input
-          className="orange-btn all-btn"
-          id="multiply-btn"
-          type="button"
-          value="x"
-        />
+        <Button className="orange-btn all-btn" id="multiply-btn" value="x" />
 
-        <input className="all-btn" id="four-btn" type="button" value="4" />
+        <Button className="all-btn" id="four-btn" value="4" />
 
-        <input className="all-btn" id="five-btn" type="button" value="5" />
+        <Button className="all-btn" id="five-btn" value="5" />
 
-        <input className="all-btn" id="six-btn" type="button" value="6" />
+        <Button className="all-btn" id="six-btn" value="6" />
 
-        <input
-          className="orange-btn all-btn"
-          id="minus-btn"
-          type="button"
-          value="-"
-        />
+        <Button className="orange-btn all-btn" id="minus-btn" value="-" />
 
-        <input className="all-btn" id="one-btn" type="button" value="1" />
+        <Button className="all-btn" id="one-btn" value="1" />
 
-        <input className="all-btn" id="two-btn" type="button" value="2" />
+        <Button className="all-btn" id="two-btn" value="2" />
 
-        <input className="all-btn" id="three-btn" type="button" value="3" />
+        <Button className="all-btn" id="three-btn" value="3" />
 
-        <input
-          className="orange-btn all-btn"
-          id="add-btn"
-          type="button"
-          value="+"
-        />
+        <Button className="orange-btn all-btn" id="add-btn" value="+" />
 
-        <input className="all-btn" id="zero-btn" type="button" value="0" />
+        <Button className="all-btn" id="zero-btn" value="0" />
 
-        <input className="all-btn" id="dot-btn" type="button" value="·" />
+        <Button className="all-btn" id="dot-btn" value="·" />
 
-        <input
-          className="orange-btn all-btn"
-          id="equal-btn"
-          type="button"
-          value="="
-        />
+        <Button className="orange-btn all-btn" id="equal-btn" value="=" />
       </div>
     </div>
   );
