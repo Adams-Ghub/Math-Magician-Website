@@ -76,9 +76,7 @@ Clone this repository to your desired folder by doing the following:
 
 <ol>
     <li>Open your terminal or command line and cd into your prefered folder</li>
-    <li>Run the command "git clone git@github.com:Adams-Ghub/math-magician-website.git" in the terminal or command line
-           
-    </li>
+    <li>Run the command "git clone git@github.com:Adams-Ghub/math-magician-website.git" in the terminal or command line</li>
     <li>Launch your Visual Studio codes</li>
     <li>Open your folder in the VS Codes and you are all set.</li>
 </ol>
