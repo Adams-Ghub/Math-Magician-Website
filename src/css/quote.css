@@ -1,0 +1,7 @@
+.major-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 3vw;
+}
