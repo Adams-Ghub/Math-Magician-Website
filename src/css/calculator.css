@@ -1,10 +1,15 @@
+.major-container {
+  width: 50%;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 3vw 35vw;
+  margin: 3vw 10vw;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .screen {
