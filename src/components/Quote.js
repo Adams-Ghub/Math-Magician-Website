@@ -2,14 +2,13 @@ import { useEffect, useState } from 'react';
 import '../css/quote.css';
 
 function Quote() {
-  const [info, setInfo] = useState({
-    loading: 'loading...',
-    error: null,
-    quote: null,
-  });
+  const [info, setInfo] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [hasError, setHasError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       try {
         const request = await fetch('https://api.api-ninjas.com/v1/quotes?category=education', {
           method: 'GET',
@@ -19,17 +18,28 @@ function Quote() {
         });
 
         const data = await request.json();
-        setInfo({ ...info, quote: data[0].quote });
+        setInfo(data[0].quote);
+        setIsLoading(false);
       } catch (error) {
-        setInfo({ ...info, error });
+        setHasError(error);
       }
     };
     fetchData();
-  }, []);
+  }, [setInfo, setIsLoading]);
+
+  if (hasError) {
+    return (
+      <div className="error-container">
+        Error!!! Something went wrong
+      </div>
+    );
+  }
+
+  if (isLoading) return <div className="loading-container">Loading...</div>;
 
   return (
     <div className="major-container">
-      {info.error || info.quote || info.loading}
+      {info}
     </div>
 
   );
