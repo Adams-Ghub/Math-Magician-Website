@@ -12,7 +12,7 @@ function Calculator() {
   };
 
   return (
-    <div>
+    <div className="major-container">
       <div className="main-container">
         <div className="screen">{Value.next || Value.total || '0'}</div>
 
