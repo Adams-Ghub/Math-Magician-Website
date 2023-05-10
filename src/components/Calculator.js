@@ -13,6 +13,9 @@ function Calculator() {
 
   return (
     <div className="major-container">
+      <div className="maths-text">
+        <h2>Lets do some maths !</h2>
+      </div>
       <div className="main-container">
         <div className="screen">{Value.next || Value.total || '0'}</div>
 

@@ -1,5 +1,7 @@
+import styles from '../css/Home.module.css';
+
 const Home = () => (
-  <div>
+  <div className={styles.mainContainer}>
     <h1>Welcome to our page !</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aut sed
