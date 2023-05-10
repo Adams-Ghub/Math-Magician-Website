@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../css/quote.css';
+import styles from '../css/Quote.module.css';
 
 function Quote() {
   const [info, setInfo] = useState([]);
@@ -29,16 +29,16 @@ function Quote() {
 
   if (hasError) {
     return (
-      <div className="error-container">
+      <div className={styles['error-container']}>
         Error!!! Something went wrong
       </div>
     );
   }
 
-  if (isLoading) return <div className="loading-container">Loading...</div>;
+  if (isLoading) return <div className={styles['loading-container']}>Loading...</div>;
 
   return (
-    <div className="major-container">
+    <div className={styles['major-container']}>
       {info}
     </div>
 

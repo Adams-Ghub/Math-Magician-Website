@@ -1,15 +1,21 @@
 .major-container {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 8vw;
+  margin-top: 4vw;
 }
 
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 3vw 10vw;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 35%;
+}
+
+.maths-text {
+  width: 50%;
 }
 
 .screen {
