@@ -1,0 +1,15 @@
+.navigationBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8vw;
+}
+
+.navLinksContainer{
+    align-self: center;
+}
+
+.homeLink,.quoteLink,.calculatorLink{
+    text-decoration: none;
+    margin:0 4px;
+}
+
