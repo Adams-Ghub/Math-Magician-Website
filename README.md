@@ -1,8 +1,3 @@
-
-<div align="center">
-  <h2><b>Leader board </b></h2>
-</div>
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
