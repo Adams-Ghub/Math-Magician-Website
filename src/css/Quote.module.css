@@ -1,0 +1,10 @@
+.major-container,
+.loading-container,
+.error-container {
+  padding: 0 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 83vw;
+}

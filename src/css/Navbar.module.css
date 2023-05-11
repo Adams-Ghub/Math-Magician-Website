@@ -1,0 +1,29 @@
+.navigationBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8vw;
+  background-color: rgba(70, 192, 70, 0.671);
+}
+
+.navLinksContainer {
+  align-self: center;
+}
+
+.homeLink,
+.quoteLink,
+.calculatorLink {
+  text-decoration: none;
+  margin: 0 4px;
+  padding: 0 5px 0 0;
+}
+
+.homeLink,
+.calculatorLink {
+  border-right: 1px solid #000;
+}
+
+.homeLink:hover,
+.quoteLink:hover,
+.calculatorLink:hover {
+  color: #000;
+}
