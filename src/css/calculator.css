@@ -1,9 +1,15 @@
 .major-container {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  padding: 0 8vw;
+  justify-content: space-between;
+
+  /* padding: 0 8vw; */
   margin-top: 4vw;
+}
+
+.container-of-main {
+  width: 50%;
+  padding: 0 8vw 0 0;
 }
 
 .main-container {
@@ -11,11 +17,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
-  width: 35%;
 }
 
 .maths-text {
   width: 50%;
+  padding: 0 0 0 8vw;
 }
 
 .screen {
@@ -136,4 +142,31 @@
   outline: none;
   height: 50px;
   border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .major-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-of-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+    padding: 0 0 0 0;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .maths-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: max-content;
+    padding: 0 0 0 0;
+  }
 }
